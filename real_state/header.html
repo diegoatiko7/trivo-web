@@ -1,0 +1,133 @@
+<div class="web-nav col-xs-offset-1 col-xs-11">
+	<div class="col-xs-2">
+		<a href="inmobiliaria"><img class="logo" src="img/logo_realstate.png" alt="trivo"></a>
+	</div>
+	<div class="nav col-xs-9">
+			<nav>
+					<ul>
+						<li id="encuentra">
+							<a href="http://trivo.herokuapp.com/">Encuentra</a>	
+						</li>
+						<li id="oportunidades">
+							<a href="oportunidades">Refiere</a>
+						</li>
+						<li id="blogs">
+							<a href="blogs">Blog</a>
+						</li>
+						<li>
+							<a id="sign_in_header" href="#" class="header-button">Iniciar Sesión</a>
+						</li>
+					</ul>
+				</nav>
+	</div>
+</div>
+<div class="mobile-nav col-xs-12">
+	<div class="col-xs-3">
+		<a href="inicio"><img class="logo" src="img/logo_realstate.png" alt="trivo"></a>
+	</div>
+	<div class="mobile-nav-button-container col-xs-9 text-right">
+		<span class="fa fa-bars mobile-nav-button" aria-hidden="true"></span>
+		<div class="mobile-menu">
+			<nav class="pull-right">
+				<ul>
+					<li>
+						<a href="inicio" id="mobile-categories">Categorias</a>
+						<div class="mobile-submenu">
+							<ul>
+								<li><a href="inicio">trivo</a></li>
+								<li><a href="inmobiliaria">trivo Inmobiliaria</a></li>
+								<li><a href="seguros">trivo Seguros</a></li>
+								<li><a href="tecnologia">trivo Tecnología</a></li>
+								<li><a href="vehiculos">trivo Vehículos</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="como-funciona">Cómo funciona</a>
+					</li>
+					<li>
+						<a href="usuarios-inmobiliaria">Usuarios</a>	
+					</li>
+					<li>
+						<a href="oportunidades">Oportunidades</a>
+					</li>
+					<li>
+						<a href="empresas-inmobiliaria">Empresas</a>
+					</li>
+					<li>
+						<a href="blogs">Blog</a>
+					</li>
+					<li>
+						<a href="http://oportunidades.trivo.net/contacto">Contacto</a>
+					</li>
+					<li>
+						<a id="sign_in_header" href="#" class="header-button">Ingreso</a>
+					</li>
+					<li>
+						<a id="sign_up_header" href="#" class="header-button">Registro</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	complete_url = window.location.pathname;
+	var url_array = complete_url.split('/');
+	var url = url_array[url_array.length-1];
+	
+	if(url == ""){
+		url = 'inicio'
+	}
+	$("nav li").removeClass('active');
+	$("#"+url).addClass('active');
+	$("#"+url).siblings('span').find('img').show();
+
+	$('.mobile-nav-button').on('click', function(e){
+  		e.stopPropagation();
+  		$('.mobile-menu').slideToggle();
+  	});
+
+  	$(".unclickable").click(function (e) {
+    	e.preventDefault();
+    });
+
+    $("#categories").hover(function () {
+    	$(this).find('.submenu').finish().slideToggle('fast');
+    });
+
+  	$('#mobile-categories').on('click', function(e){
+  		e.preventDefault();
+  		e.stopPropagation();
+  		$('.mobile-submenu').slideToggle("fast");
+  	});
+
+  	$('.header-button').on('click', function(e){
+  		e.preventDefault();
+		var id = $(this).attr('id');
+		if( navigator.userAgent.match(/Android/i)
+		|| navigator.userAgent.match(/iPhone/i)
+		|| navigator.userAgent.match(/iPad/i)
+		|| navigator.userAgent.match(/iPod/i))
+		{	
+			if(navigator.userAgent.match(/iPhone/i)
+			|| navigator.userAgent.match(/iPad/i)
+			|| navigator.userAgent.match(/iPod/i))
+			{
+				window.location.href = "https://itunes.apple.com/us/app/trivo/id1156095919?l=es&mt=8";
+			}
+			if(navigator.userAgent.match(/Android/i)){
+				window.location.href = "https://play.google.com/store/apps/details?id=com.provedatos.trivo&hl=en";
+			}
+		}
+		else{
+			if(id == 'sign_in_header'){
+				window.location.href = "https://www.trivo.co/#/login";
+			}
+			if(id == 'sign_up_header'){
+				window.location.href = "https://www.trivo.co/#/broker_register";
+			}
+		}
+	});
+</script>

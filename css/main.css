@@ -1,0 +1,1012 @@
+@font-face {
+ 	font-family: Neo Sans;
+ 	src: url(../fonts/Neo_Sans_Std_Regular.otf);
+}
+body {
+	font-family: Neo Sans;
+  	color: #686868;
+  	width: 100%;
+  	height: 100%;
+}
+.no-margin{
+	margin: 0;
+}
+.no-padding{
+	padding: 0;
+}
+.no-right-padding{
+	padding-right: 0;
+}
+.display-none{
+	display: none;
+}
+.word-braker{
+	word-wrap: break-word;
+}
+.header{
+    padding: 5px 0;
+    position: fixed;
+    transition: background .5s ease;
+    z-index: 99999;
+}
+.header-scrolled{
+    background-color: #000;
+}
+.logo{
+	width: 120px;
+	height: 80px;
+	transition: all .5s ease;
+	padding-top: 5%;
+}
+.logo-scrolled{
+	width: 75px;
+	height: 65px;
+}
+.main-container{
+	background: url(../img/main-img.jpg) no-repeat;
+    background-position: 20% 50%;
+    background-size: cover;
+}
+.main-container-technology{
+	background: url(../img/technology-main.png) no-repeat;
+    background-position: 20% 50%;
+    background-size: cover;
+}
+.main-container-vehicles{
+	background: url(../img/vehicles-main.png) no-repeat;
+    background-position: 20% 50%;
+    background-size: cover;
+}
+.main-container-realstate{
+	background: url(../img/realstate-main.png) no-repeat;
+    background-position: 20% 50%;
+    background-size: cover;
+}
+.main-container-insurance{
+	background: url(../img/insurance-main.png) no-repeat;
+    background-position: 20% 50%;
+    background-size: cover;
+}
+.nav{
+	margin-top: 19px;
+	text-align: right;
+}
+.nav li{
+	list-style: none;
+	display: inline-block;
+    vertical-align: middle;
+	margin: 0 7px;
+	padding: 1%;
+}
+.nav .active{
+	background-color: #0A6071;
+}
+.nav li a{
+	color: #FFF;
+}
+.nav li a:hover{
+	color: #FFF;
+}
+a, a:hover, a:visited, a:active, a:focus{
+	text-decoration: none;
+}
+.a-scrolled{
+	color: #FFF !important;
+}
+.nav li a.header-button{
+	padding: .6em 1.4em;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: #FFF;
+    transition: all .1s ease;
+    color: #FFF;
+}
+.nav li a.header-button:hover, .button:hover{
+	background-color: #009E90;
+	color: #FFF !important;
+}
+.submenu{
+	background-color: rgba(0, 0, 0, .7);
+	position: absolute;
+	text-align: left;
+	display: none;
+	border: 1px solid #009E90;
+    border-radius: 4px;
+    padding-top: 5px;
+}
+.submenu ul{
+	padding: 0;
+}
+.submenu .submenu-icon-container{
+	display: inline-block;
+	width: 22px;
+}
+.submenu .submenu-icon-container img{
+	width: 18px;
+	height: 18px;
+	display: none;
+}
+.submenu ul li{
+	display: block;	
+	padding: 8px 35px 8px 0;
+}
+.submenu ul li a:hover{
+	border-bottom: 2px solid #009E90;
+}
+.submenu-scrolled{
+	background-color: white;
+}
+.submenu-item-border{
+	border-bottom: 1px gray solid;
+}
+.mobile-nav-button-container{
+	color: #FFF;
+	padding-top: 10px;
+}
+.mobile-nav-button-scrolled{
+	color: #686868;
+}
+.mobile-nav-button{
+	font-size: 45px;
+	cursor: pointer;
+}
+.mobile-menu{
+	display: none;
+}
+.mobile-nav nav{
+	padding: 15px;
+	background-color: rgba(0, 0, 0, .9);
+}
+.mobile-nav nav ul{
+	padding: 0;
+}
+.mobile-nav li{
+	list-style: none;
+	margin-top: 30px;
+    font-size: 20PX;
+}
+.mobile-nav li a{
+	color: #AAA;
+}
+.mobile-nav li a:hover{
+	color: #FFF;
+}
+.mobile-nav-scrolled nav{
+	background-color: #FFF !important;
+}
+.mobile-nav-scrolled li a{
+	color: #686868;
+}
+.mobile-nav-scrolled li a:hover{
+	color: #000;
+}
+.button-2{
+	background-color: #009E90;
+	color: #FFF !important;
+}
+.mobile-submenu{
+	display: none;
+}
+.mobile-submenu li{
+	font-size: 16px;
+	margin-top: 12px;
+	padding-bottom: 7px;
+	border-bottom: 1px solid #009E90;
+}
+.main-content{
+	padding: 315px 0 245px;
+	color: #FFF;
+}
+.subtitle{
+	color: #AAA;
+	font-size: 20px;
+	margin: 5px 0 30px;
+}
+.link{
+	color: #009E90;
+	font-size: 15px;
+}
+.link:hover{
+	color: #00ceb9;
+}
+.margin-right-10{
+	margin-right: 10px;
+}
+.margin-top-45{
+	margin-top: 45px;
+}
+.phone-container, .testimonies-container, .app-info-container{
+	background: url(../img/halftone.png) repeat;
+	padding-top: 45px;
+}
+.relative{
+	position: relative;
+}
+.phone-bg{
+	height: 550px;
+	width: 260px;
+	position: relative;
+	margin: 0 auto;
+}
+.phone-info{
+	position: absolute;
+	top: 15px;
+    width: 260px;
+}
+.icon-container{
+	width: 50px;
+	height: 50px;
+	background-color: #FFF;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 13px;
+	cursor: pointer;
+	margin: 0 auto;
+}
+.helper{
+	position: absolute;
+    color: #009E90;
+    font-family: 'Gochi Hand', cursive;
+    top: -90px;
+}
+.helper .helper-text{
+	font-size: 18px;
+}
+.helper .helper-img img{
+	width: 45px;
+}
+.helper-2{
+	right: -30px;
+}
+.helper-3{
+	left: -30px;
+	display: none;
+}
+.helper-3 img{
+	margin-left: 20px;
+}
+.icon-section{
+	margin-bottom: 15px;
+}
+.icon{
+	font-size: 25px;
+}
+.active-icon{
+	background-color: #009E90;
+	color: #FFF;
+}
+.active-icon .special-icon-home{
+	background: url(../img/send_alt.png) center center no-repeat;
+	background-size: 35px 25px;
+}
+.connector{
+	border-bottom: 2px dotted #009E90;
+	padding-top: 24px;
+}
+.text-section .text1{
+	font-weight: bold;
+	color: black;
+}
+.padding-top-left{
+	padding-top: 80px;
+}
+.padding-top-right{
+	padding-top: 170px;
+}
+.phone-buttons{
+	margin: 45px 0;
+}
+.button{
+	//padding: .6em 1.4em;
+	padding: 8px;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: #009E90;
+    transition: all .1s ease;
+    color: #686868;
+    margin-bottom: 10px;
+}
+.counter-container{
+	background: url(../img/counter_bg.png) center center no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #FFF;
+}
+.counter-text-1{
+	font-size: 26px;
+}
+.counter-text-2{
+	margin-bottom: 10px;
+	color: #AAAAAA;
+}
+.decor{
+	background: #009E90;
+    border: 0;
+    margin: 15px auto 15px;
+    height: 4px;
+    width: 50px;
+}
+.counter-content{
+	//font-size: 68px;
+	margin-bottom: 25px;
+}
+.counter-item{
+	//background-color: #009E90;
+	background: url(../img/halftone.png) repeat;
+	color: #009E90;
+	border-radius: 12px;
+	padding: 20px 25px;
+	margin: 7px 1%;
+	height: 215px;
+	width: 17.8%;
+	float: left;
+}
+.counter-item-text{
+	font-size: 22px;
+}
+.counter-icon img{
+	width: 75px;
+	height: 75px;
+	margin-bottom: 7px;
+}
+.counter-main-number{
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/*.counter [class^="char"] {
+    border-radius: 4px;
+    color: #686868;
+    margin: 0 4.5px;
+    background: #f8f8f8;
+    display: inline-block;
+    position: relative;
+    width: 50px;
+}*/
+.section-title{
+	font-size: 26px;
+	color: #009E90;
+}
+.special-section-title{
+	font-size: 22px;
+	margin-top: 0;
+}
+.slick-slide {
+    outline: none;
+}
+.testimonies-container, .companies-container{
+	padding-bottom: 30px
+}
+.testimonies{
+	text-align: left;
+	margin-top: 50px;
+}
+.testimonies img{
+	width: 100px;
+	height: 100px;
+	margin: 0 auto;
+	border-radius: 25%;
+}
+.testimonies .name{
+	font-weight: bold;
+	color: #000;
+	font-size: 16px;
+	margin-bottom: 3px;
+}
+.testimonies .description{
+	margin-bottom: 10px;
+}
+.testimonies .text{
+	font-size: 13px;
+	font-family: sans-serif;
+}
+.companies-container{
+	padding-top: 25px;
+	position: relative;
+}
+.companies img{
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+}
+.prev-arrow, .next-arrow{
+	cursor: pointer;
+	position: absolute;
+	top: 50px;
+	font-size: 30px;
+}
+.prev-arrow{
+	left: -45px;
+}
+.next-arrow{
+    right: -45px;
+}
+.app-info-content{
+	margin-top: 40px;
+}
+.round-icon{
+	box-shadow: 0 3px 5px #888888;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+.app-buttons img{
+	width: 150px;
+}
+.app-image-content{
+	background-image: url(../img/app_background.png);
+	background-repeat: no-repeat;
+	background-position: right top; 
+	background-size: 52%;
+	height: 500px;
+	position: relative;
+}
+.app-image-technology{
+	background-image: url(../img/app_background_technology.png);
+}
+.app-image-vehicles{
+	background-image: url(../img/app_background_vehicles.png);
+}
+.app-image-realstate{
+	background-image: url(../img/app_background_realstate.png);
+}
+.app-image-insurance{
+	background-image: url(../img/app_background_insurance.png);
+}
+.apps-circle{
+	background-color: #FFF;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 67px;
+	color: #333333;
+	display: inline-block;
+	margin: 0 3px;
+	box-shadow: 0 3px 5px #888888;
+}
+.app-buttons{
+	margin-top: 45px;
+}
+.page-anchor{
+	height: 70px;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+	z-index: 9999;
+}
+.contact-form{
+	background: url(../img/halftone.png) repeat;
+	box-shadow: 0 13px 15px rgba(0,0,0,.1);
+	padding: 20px 20px 15px;
+	text-align: center;
+}
+.contact-container{
+	padding-top: 30px;
+	padding-bottom: 80px;
+	position: relative;
+	height: 675px;
+}
+.contact-title-container{
+	background-color: rgba(255, 255, 255, .8);
+    margin-bottom: 20px;
+}
+.contact-title{
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+}
+.position-relative{
+	position: relative;
+}
+.contact-button{
+	color: #FFF;
+    background-color: #009E90;
+}
+.message-container{
+	height: 50px;
+	margin-top: 5px;
+}
+.loading-icon{
+	font-size:24px;
+	margin-top: 15px;
+	//display: none;
+}
+#map{
+	height: 100%; 
+	width: 100%; 
+	position:absolute; 
+	top: 0; 
+	left: 0; 
+	z-index: 0;
+}
+.social-section{
+	background-color: #333333;
+	padding: 10px 0;
+}
+.social-section img{
+	margin: 0 3px;
+}
+.social-circle{
+	background-color: #4f4d4e;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 55px;
+	color: #FFF;
+	display: inline-block;
+	margin: 0 3px;
+}
+.footer-content{
+	background-color: #4e4c4d;
+	color: #FFF;
+	padding: 1%;
+}
+
+.chat{
+	position: fixed;
+	right: 10px;
+	bottom: 0;
+	z-index: 9999;
+}
+.chat img{
+	width: 110px;
+}
+
+/*about trivo page*/
+
+.about-trivo-steps{
+	border-bottom: 1px solid #e0e6ed;
+}
+.steps-container{
+	padding-top: 70px;
+}
+.steps-container h1{
+	margin-bottom: 80px;
+	font-size: 28px;
+}
+.steps-container .companies-steps{
+	display: inline-block;
+}
+.steps-container li{
+	color: #686868;
+	padding: 0px 15px;
+	margin: 0 13px;
+	cursor: pointer;
+	border-bottom: 4px solid transparent;
+	opacity: .3;
+}
+.steps-container li:hover{
+	opacity: 1;
+}
+.steps-container ul{
+	margin-bottom: 0;
+	padding: 0;
+}
+.active-step{
+	color: #686868 !important;
+	border-bottom: 4px solid #009E90 !important;
+	opacity: 1 !important;
+}
+.step-icon{
+	margin-bottom: 7px;
+}
+.step-icon-alt{
+	margin-bottom: 4px;
+}
+.special-icon-container{
+	margin-bottom: 4px;
+	height: 67px;
+	padding-top: 33px;
+}
+.special-icon{
+	background: url(../img/send.png) center center no-repeat;
+	width: 40px;
+	height: 30px;
+}
+.special-icon-home{
+	background: url(../img/send.png) center center no-repeat;
+    background-size: 35px 25px;
+    width: 47px;
+    height: 25px;
+}
+.about-trivo-steps-description{
+	background-color: #FAFAFA;
+	padding-bottom: 25px;
+}
+.steps-image-container{
+	position: relative;
+	height: 600px;
+}
+.steps-image-container img{
+	position: absolute;
+	width: 300px;
+	left: 0; 
+	right: 0; 
+	margin-left: auto; 
+	margin-right: auto; 
+}
+.about-trivo-text p{
+	line-height: 25px;
+	text-align: justify;
+}
+.about-trivo-icon{
+	padding-top: 12px;
+}
+.trivo-steps{
+	display: none;
+}
+.about-trivo-buttons{
+	margin-bottom: 20px;
+}
+
+/*generic page*/
+
+.page-main-container{
+    color: #FFF;
+    padding: 195px 0;
+}
+.page-users-container{
+	background: url(../img/users_bg_1.jpg) no-repeat;
+    background-position: 70% 50%;
+    background-size: cover;
+}
+.page-users-container-tecnology{
+	background: url(../img/users-technology.png) no-repeat;
+    background-position: 70% 50%;
+    background-size: cover;
+}
+.page-users-container-realstate{
+	background: url(../img/users-realstate.png) no-repeat;
+    background-position: 70% 50%;
+    background-size: cover;
+}
+.page-users-container-vehicles{
+	background: url(../img/users-vehicles.png) no-repeat;
+    background-position: 70% 50%;
+    background-size: cover;
+}
+.page-users-container-insurance{
+	background: url(../img/users-insurance.png) no-repeat;
+    background-position: 70% 50%;
+    background-size: cover;
+}
+.page-companies-container{
+	background: url(../img/companies_bg_1.jpg) no-repeat;
+    background-position: 65% 50%;
+    background-size: cover;
+}
+.page-companies-container-vehicles{
+	background: url(../img/companies-vehicles.png) no-repeat;
+    background-position: 65% 50%;
+    background-size: cover;
+}
+.page-companies-container-realstate{
+	background: url(../img/companies-realstate.png) no-repeat;
+    background-position: 65% 50%;
+    background-size: cover;
+}
+.page-companies-container-technology{
+	background: url(../img/companies-technology.png) no-repeat;
+    background-position: 65% 50%;
+    background-size: cover;
+}
+.page-companies-container-insurance{
+	background: url(../img/companies-insurance.png) no-repeat;
+    background-position: 65% 50%;
+    background-size: cover;
+}
+.page-button{
+	margin-top: 55px;
+}
+.page-section-container{
+	position: relative;
+}
+.app-hand{
+	width: 25%;
+	position: absolute;
+	right: 0;
+	top: 180px;
+	z-index: 9999;
+}
+.page-section{
+	padding: 40px 0;
+	background-color: #FAFAFA;
+	color: #444444;
+}
+.page-section-title{
+	font-size: 30px;
+	line-height: 1.1;
+	margin-top: 20px;
+    margin-bottom: 10px;
+}
+.page-section-subtitle, .page-section-list{
+	font-family: sans-serif;
+	font-size: 16px;
+	margin: 15px 0;
+	color: #787878;
+}
+.page-section-list ul{
+	list-style: none;
+	padding: 0;
+}
+.page-section-list ul li{
+	margin: 7px 0;
+}
+.page-section-list ul li img{
+	width: 20px;
+	height: 20px;
+	margin-right: 7px;
+}
+.page-separator{
+	background: #d1d1d1;
+    height: 1px;
+}
+.page-alt-section{
+	padding: 80px 0;
+	color: #FFF;
+}
+.page-alt-users{
+	background: url(../img/users_bg_2.jpg) center center no-repeat;
+	background-size: cover;
+}
+.page-alt-companies{
+	background: url(../img/companies_bg_2.jpg) center center no-repeat;
+	background-size: cover;
+}
+.page-alt-header{
+	margin-bottom: 45px;
+}
+.page-section-alt-subtitle{
+	color: #D1CFCF;
+}
+.page-alt-icon{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #FFF;
+	text-align: center;
+	color: black;
+	font-size: 45px;
+    line-height: 100px;
+}
+.page-alt-text-container{
+	padding: 0;
+	margin-top: 15px;
+	text-align: justify;
+}
+.page-alt-text-1{
+	font-size: 17px;
+	margin-bottom: 12px;
+}
+.page-alt-text-2{
+	font-family: sans-serif;
+	color: #D1CFCF;
+}
+.page-alt-separator{
+	background: rgba(215,215,215,.2);
+    height: 2px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.page-buttons{
+	margin-top: 65px;
+}
+.color-white{
+	color: #FFF;
+}
+
+/*campaigns*/
+
+.page-campaigns-container{
+	background: url(../img/campaigns_bg.png) center center no-repeat;
+	background-size: cover;
+}
+.campaigns-container{
+	background-color: #FFF;
+	padding: 110px 0 30px;
+}
+.campaign-content{
+	margin-top: 25px;
+}
+.categories-content, .campaigns_content, .main-categories-content{
+	width: 72%;
+	margin: 0 auto;
+}
+.blogs-content{
+	margin: 0 auto;
+}
+.campaign-element, .main-campaign-element{
+	width: 225px;
+	margin: 10px auto;
+	padding-bottom: 15px;
+	text-align: left;
+	background-color: #FFF;
+	border-radius: 15px;
+	box-shadow: 1px 1px 1px #ccc;
+	cursor: pointer;
+}
+.main-campaign-element{
+	width: 100%;
+}
+.campaign-element img{
+	border-radius: 15px 15px 0 0;
+}
+.main-campaign-element img{
+	border-radius: 15px 15px 0 0;
+	width: 100%;
+}
+.campaign-element .company, .main-campaign-element .company {
+	font-weight: bold;
+	font-size: 16px;
+	color: #000;
+	padding: 10px 25px 0;
+	margin-bottom: 8px;
+}
+.campaign-element .prize-range, .main-campaign-element .prize-range{
+	color: #009E90;
+	font-size: 12px;
+	padding-right: 25px;
+}
+.campaign-element .prize-range span, .main-campaign-element .prize-range span{
+	margin-right: 8px;
+}
+.campaign-element hr{
+	margin: 10px 0 0 0;
+}
+.campaign-element .campaign-title, .main-campaign-element .campaign-title{
+	padding: 10px 25px 0;
+	font-weight: bold;
+}
+.campaign-element .campaign-description, .main-campaign-element .campaign-description{
+	padding: 10px 25px 0;
+}
+.grid{
+	text-align: center;
+}
+.back-arrow, .categories-back-arrow{
+	display: none;
+	cursor: pointer;
+	text-align: left;
+	padding: 10px 0 0 30px;
+	margin-bottom: -30px;
+}
+.modal-dialog {
+    margin: 120px auto;
+}
+.modal-header {
+    color: #009E90;
+}
+.modal-back-icon{
+	display: none;
+	cursor: pointer;
+}
+.modal-body .row{
+	margin-bottom: 10px;
+}
+.modal-button{
+	cursor: pointer;
+}
+.register-modal{
+	display: none;
+}
+.register-modal-icon{
+	font-size: 100px;
+}
+.register-modal-text{
+	font-size: 30px;	
+}
+.register-modal-text-2{
+	font-size: 20px;	
+}
+.register-button{
+	cursor: pointer;
+}
+
+/*Media queries*/
+
+@media (max-width: 768px){
+	.main-content {
+		padding: 200px 0;
+	}
+	.page-main-container{
+		padding: 160px 0 110px;
+	}
+ 	.sm-text-center{
+    	text-align: center;
+  	}
+  	.steps-container li {
+		margin: 0 10px;
+		padding: 0;
+  	}
+  	.categories-content, .campaigns_content, .main-categories-content{
+		width: 100%;
+	}
+	.back-arrow, .categories-back-arrow{
+		margin-bottom: 0;
+	}
+	.page-button{
+		margin-top: 0;
+	}
+	.counter-item{
+		width: 100%;
+	}
+}
+@media (min-width: 992px){
+  	.relative{
+		margin-bottom: 65px;
+	}
+	.phone{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.first-element-phone{
+		margin-top: 60px
+	}
+	.lg-right{
+		float: right;
+		text-align: right;
+	}
+	.about-trivo-text{
+		padding-top: 80px;
+	}
+	.steps-container ul {
+		padding-right: 7%;
+	}
+	.about-trivo-buttons{
+		margin-top: -220px;
+	}
+	.steps-image-container{
+		margin-top: -90px;
+	}
+	.page-alt-icon{
+		float: right;
+	}
+}
+@media (max-width: 992px){
+ 	.md-text-center{
+    	text-align: center;
+  	}
+  	.app-image-content{
+  		background: none;
+  		height: auto;
+  		padding-bottom: 40px;
+  	}
+  	.steps-container ul{
+  		text-align: center;
+  	}
+  	.about-trivo-buttons{
+		margin-top: 20px;
+	}
+	.about-trivo-text{
+		margin: 30px 0;
+	}
+	.app-hand{
+		display: none;
+	}
+	.page-alt-icon{
+		margin: 0 auto;
+	}
+}
+@media (max-width: 992px) and (min-width: 768px){
+  	.categories-content, .campaigns_content, .main-categories-content{
+		width: 80%;
+	}
+}
+@media (min-width: 1330px){
+  	.mobile-nav{
+    	display: none;
+  	}
+}
+@media (max-width: 1329px){
+	.web-nav{
+    	display: none;
+  	}
+}
+@media (max-width: 1209px) and (min-width: 768px){
+  	.counter-item{
+		width: 46%;
+	}
+}
